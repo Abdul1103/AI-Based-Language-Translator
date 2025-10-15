@@ -1,0 +1,226 @@
+
+:root {
+   
+    --primary: #4361ee;
+    --secondary: #3a0ca3;
+    --accent: #f72585;
+    --success: #4cc9f0;
+    --warning: #f8961e;
+    --danger: #ef233c;
+    --light: #f8f9fa;
+    --dark: #212529;
+    --text: #2b2d42;
+    --bg: #ffffff;
+  }
+  
+ 
+  .dark-mode {
+    --primary: #4895ef;
+    --secondary: #560bad;
+    --accent: #b5179e;
+    --text: #f8f9fa;
+    --bg: #121212;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 20px;
+    transition: all 0.3s ease;
+    line-height: 1.6;
+  }
+  
+ 
+  h1 {
+    color: var(--primary);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  h2 {
+    color: var(--secondary);
+    margin-top: 30px;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 8px;
+    display: inline-block;
+  }
+  
+  
+  .card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 25px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.1);
+  }
+  
+  .dark-mode .card {
+    background: rgba(30, 30, 30, 0.9);
+    border-color: rgba(255,255,255,0.1);
+  }
+  
+ 
+  form {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(67, 97, 238, 0.05);
+  }
+  
+  textarea, input[type="text"], input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s;
+    background: rgba(255,255,255,0.9);
+  }
+  
+  select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    font-size: 16px;
+    background: white;
+  }
+  
+  .dark-mode textarea,
+  .dark-mode input[type="text"],
+  .dark-mode select {
+    background: rgba(30, 30, 30, 0.9);
+    color: white;
+    border-color: var(--accent);
+  }
+  
+ 
+  button, input[type="submit"] {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: all 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  button:hover {
+    background: var(--secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  #toggle-dark-mode {
+    background: var(--dark);
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+  }
+  
+  .dark-mode #toggle-dark-mode {
+    background: var(--light);
+    color: var(--dark);
+  }
+  
+ 
+  .output-section {
+    background: rgba(76, 201, 240, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    border-left: 4px solid var(--success);
+  }
+  
+  strong {
+    color: var(--primary);
+  }
+ 
+  #history {
+    background: rgba(248, 150, 30, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+  
+  #history ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #history li {
+    padding: 12px;
+    margin: 8px 0;
+    background: rgba(255,255,255,0.8);
+    border-radius: 6px;
+    transition: all 0.3s;
+  }
+  
+  .dark-mode #history li {
+    background: rgba(30,30,30,0.8);
+  }
+  
+  #history li:hover {
+    transform: translateX(5px);
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  }
+ 
+  audio {
+    width: 100%;
+    margin: 15px 0;
+    border-radius: 20px;
+  }
+  
+
+  @media (max-width: 768px) {
+    .card {
+      padding: 15px;
+      margin: 15px 10px;
+    }
+    
+    h1 {
+      font-size: 2rem;
+      margin-top: 40px;
+    }
+    
+    #toggle-dark-mode {
+      top: 10px;
+      right: 10px;
+      padding: 8px 15px;
+    }
+  }
+  
+
+  @keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+  }
+  
+  .loading {
+    animation: pulse 1.5s infinite;
+  }
+  
+  /* Special Elements */
+  .feature-icon {
+    font-size: 1.2em;
+    margin-right: 8px;
+  }
+  
+  .language-flag {
+    width: 20px;
+    height: 15px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }

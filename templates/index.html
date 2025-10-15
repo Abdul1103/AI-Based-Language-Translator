@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Language Translator🌍</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <!--  Dark Mode Toggle -->
+    <button id="toggle-dark-mode">🌙 Dark Mode</button>
+
+    <h1>AI Language Translator 🌍</h1>
+
+    <!--  Text Translation -->
+    <h2>Text Translation</h2>
+    <form action="/translate_text" method="POST">
+        <textarea name="text" placeholder="Enter text to translate" required></textarea>
+        <select name="language" id="outputLanguage">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+            <option value="de">German</option>
+            <option value="hi">Hindi</option>
+            <option value="ta">Tamil</option>
+            <option value="te">Telugu</option>
+            <option value="kn">Kannada</option>
+            <option value="bn">Bengali</option>
+            <option value="zh-cn">Chinese (Simplified)</option>
+            <option value="ja">Japanese</option>
+            <option value="ko">Korean</option>
+            <option value="ar">Arabic</option>
+            <option value="pt">Portuguese</option>
+            <option value="ru">Russian</option>
+        </select>
+        <button type="submit">Translate</button>
+        <button type="button" id="speak-button">🎙️ Speak</button>
+    </form>
+
+    <!--  Translated Text Output -->
+    {% if translated_text %}
+        <p><strong>Translated Text:</strong> <span id="translated-text">{{ translated_text }}</span></p>
+        <button type="button" id="play-audio">🔊 Play Audio</button>
+    {% endif %}
+
+    <!-- 🔹 Image Translation (OCR) -->
+    <h2>Image Translation(OCR)</h2>
+    <form action="/translate_image" method="post" enctype="multipart/form-data">
+        <label for="image">Upload Image:</label>
+        <input type="file" name="image" required>
+    
+        <label for="image_language">Select Input Language (OCR):</label>
+        <select name="image_language">
+            <option value="eng">English</option>
+            <option value="hin">Hindi</option>
+            <option value="jpn">Japanese</option>
+            <option value="kor">Korean</option>
+            <option value="mal">Malayalam</option>
+            <option value="sin">Sinhala</option>
+            <option value="tam">Tamil</option>
+        </select>
+    
+        <label for="target_language">Translate To:</label>
+        <select name="target_language">
+            <option value="en">English</option>
+            <option value="hi">Hindi</option>
+            <option value="ta">Tamil</option>
+            <option value="ml">Malayalam</option>
+            <option value="ja">Japanese</option>
+            <option value="ko">Korean</option>
+        </select>
+    
+        <button type="submit">Translate Image</button>
+    </form>
+    
+
+    {% if extracted_text %}
+       <p><strong>Extracted:</strong> {{ extracted_text }}</p>
+       <p><strong>Translated:</strong> {{ translated_text }}</p>
+    {% endif %}
+
+    <!--  Audio File Translation -->
+    <h2>Audio file Translation</h2>
+    <form action="/translate_audio" method="POST" enctype="multipart/form-data">
+        <input type="file" name="audio">
+        <select name="audio_language">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+            <option value="de">German</option>
+            <option value="hi">🇮🇳 Hindi</option>
+            <option value="ta">🇮🇳 Tamil</option>
+            <option value="te">🇮🇳 Telugu</option>
+            <option value="kn">🇮🇳 Kannada</option>
+            <option value="bn">🇮🇳 Bengali</option>
+            <option value="zh-cn">🇨🇳 Chinese (Simplified)</option>
+            <option value="ja">🇯🇵 Japanese</option>
+            <option value="ko">🇰🇷 Korean</option>
+            <option value="ar">🇸🇦 Arabic</option>
+            <option value="pt">🇵🇹 Portuguese</option>
+            <option value="ru">🇷🇺 Russian</option>
+        </select>
+        <button type="submit">Translate Audio</button>
+    </form>
+
+    {% if detected_text %}
+        <p><strong>Detected Speech:</strong> {{ detected_text }}</p>
+        <p><strong>Translated Speech:</strong> {{ translated_text }}</p>
+    {% endif %}
+
+
+<!-- Pronunciation Guide -->
+
+<div class="card">
+    <h2>🗣️ Speech Pronunciation Guide (English only)</h2>
+    <form method="POST" action="/pronunciation_guide">
+        <textarea name="pronunciation_text" placeholder="Enter English text..." required></textarea>
+        <button type="submit">Get Pronunciation</button>
+    </form>
+
+    {% if original_text %}
+        <p><strong>Original:</strong> {{ original_text }}</p>
+    {% endif %}
+    {% if phonetic_text %}
+        <p><strong>Phonetic:</strong> {{ phonetic_text }}</p>
+    {% endif %}
+    {% if pronunciation_audio %}
+        <audio controls>
+            <source src="{{ url_for('static', filename='audio/' + pronunciation_audio) }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    {% endif %}
+</div>
+
+
+ <!-- 🔹 Grammar Check -->
+    <!-- Grammar & Spelling Check Form -->
+    <h2>Grammar Check</h2>
+    <form action="/check_grammar" method="post">
+        <textarea name="grammar_text" placeholder="Enter text for grammar & spelling check"></textarea>
+        <button type="submit">Check Grammar & Spelling</button>
+    </form>
+    
+    
+    {% if original_text %}
+        <h3>Original Text:</h3>
+        <p>{{ original_text }}</p>
+    {% endif %}
+    
+    {% if spelling_corrected_text %}
+        <h3>Spelling-Corrected Text:</h3>
+        <p>{{ spelling_corrected_text }}</p>
+    {% endif %}
+    
+    {% if corrected_text %}
+        <h3>Final Grammar-Corrected Text:</h3>
+        <p>{{ corrected_text }}</p>
+    {% endif %}
+
+
+
+
+    
+<!-- Multi-language Batch Translation -->
+<div class="card">
+    <h2>🌐 Multi-language Batch Translation</h2>
+    <form method="POST" action="/batch_translate">
+        <textarea name="batch_text" placeholder="Enter text to translate into multiple languages..." required></textarea>
+
+        <label>Select Languages:</label><br>
+        <select name="batch_languages" multiple size="6" required>
+            <option value="en">English</option>
+            <option value="hi">Hindi</option>
+            <option value="ta">Tamil</option>
+            <option value="te">Telugu</option>
+            <option value="kn">Kannada</option>
+            <option value="bn">Bengali</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+            <option value="de">German</option>
+            <option value="zh-cn">Chinese</option>
+            <option value="ja">Japanese</option>
+            <option value="ko">Korean</option>
+            <option value="ru">Russian</option>
+            <option value="ar">Arabic</option>
+        </select><br><br>
+
+        <button type="submit">Translate</button>
+    </form>
+
+    {% if batch_text %}
+        <p><strong>Original:</strong> {{ batch_text }}</p>
+    {% endif %}
+
+    {% if batch_results %}
+        <h3>Translations:</h3>
+        <ul>
+        {% for lang, result in batch_results %}
+            <li><strong>{{ lang }}:</strong> {{ result }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+</div>
+
+
+   
+
+
+
+
+    <!-- 🔹 Text File Translation -->
+    <section class="feature">
+        <h2>📄 Text File Translation (with Grammar + Spelling Check)</h2>
+        <form action="/translate_file" method="POST" enctype="multipart/form-data">
+            <label>Select a .txt file:</label>
+            <input type="file" name="file" accept=".txt" required>
+            <label>Target Language:</label>
+            <select name="file_language">
+                <option value="en">English</option>
+                <option value="fr">French</option>
+                <option value="hi">Hindi</option>
+                <option value="ta">Tamil</option>
+                <option value="ko">Korean</option>
+                <!-- Add more languages as needed -->
+            </select>
+            <button type="submit">Translate File</button>
+        </form>
+
+        <!-- Output Section -->
+        {% if file_original %}
+        <div class="section">
+            <h2>📝 Original Text</h2>
+            <textarea readonly>{{ file_original }}</textarea>
+        </div>
+        {% endif %}
+    
+        {% if file_grammar_corrected %}
+        <div class="output">
+            <h3> Corrected Text (Spelling + Grammar):</h3>
+            <p>{{ file_grammar_corrected }}</p>
+        </div>
+        {% endif %}
+
+        {% if file_translation %}
+        <div class="output">
+            <h3>🌍 Translated Text:</h3>
+            <p>{{ file_translation }}</p>
+        </div>
+        {% endif %}
+    </section>
+
+
+    <!-- Language Detection -->
+    <div class="card">
+        <h2>🌐 Language Detection (Only)</h2>
+        <form action="/detect_language" method="post">
+            <textarea name="detect_text" placeholder="Enter text to detect language..." required></textarea>
+            <button type="submit">Detect Language</button>
+        </form>
+    
+        {% if input_text %}
+            <p><strong>Input Text:</strong> {{ input_text }}</p>
+        {% endif %}
+        
+        {% if detected_language_only %}
+            <p><strong>Detected Language:</strong> {{ detected_language_only }}</p>
+        {% endif %}
+    </div>
+   
+        
+       
+            
+    <!-- Translation History -->
+    <h2>Translation History</h2>
+    <ul>
+        {% for item in history %}
+            <li><strong>Original:</strong> {{ item[0] }} ({{ item[1] }}) → <strong>Translated:</strong> {{ item[2] }} ({{ item[3] }})</li>
+        {% endfor %}
+    </ul>
+
+    <button id="clear-history">🗑️ Clear History</button>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
