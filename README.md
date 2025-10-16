@@ -75,41 +75,41 @@ The AI-Based Language Translator facilitates the translation of multilingual tex
 
 ## 🛠️ TOOLS USED 💻✨
 
-🐍 Python 3.x
-🖥️ Flask (Web Framework)
-📚 TextBlob (Grammar & Spelling)
-📝 LanguageTool (Grammar Correction)
-🔊 gTTS (Text-to-Speech)
-📸 pytesseract (OCR for Image Translation)
-🌐 Googletrans / Deep Translator (Translation API)
-🎵 FFMpeg (Audio Processing)
-🗣️ SpeechRecognition (Speech-to-Text)
-🎶 Pydub (Audio Manipulation)
-🖼️ Pillow (Image Processing)
-🔤 pyspellchecker (Spell Correction)
-🔡 eng_to_ipa (Pronunciation Guide)
+- 🐍 Python 3.x
+- 🖥️ Flask (Web Framework)
+- 📚 TextBlob (Grammar & Spelling)
+- 📝 LanguageTool (Grammar Correction)
+- 🔊 gTTS (Text-to-Speech)
+- 📸 pytesseract (OCR for Image Translation)
+- 🌐 Googletrans / Deep Translator (Translation API)
+- 🎵 FFMpeg (Audio Processing)
+- 🗣️ SpeechRecognition (Speech-to-Text)
+- 🎶 Pydub (Audio Manipulation)
+- 🖼️ Pillow (Image Processing)
+- 🔤 pyspellchecker (Spell Correction)
+- 🔡 eng_to_ipa (Pronunciation Guide)
 
 ## 📦 MODULES 🧩🚀
 
-1️⃣ Text Translation Module
-2️⃣ Speech-to-Text Module
-3️⃣ Image-to-Text (OCR) Module
-4️⃣ Audio Translation Module
-5️⃣ Grammar & Spelling Check Module
-6️⃣ Text File Translation Module
-7️⃣ Multi-language Batch Translation Module
-8️⃣ Translation History Module
+- 1️⃣ Text Translation Module
+- 2️⃣ Speech-to-Text Module
+- 3️⃣ Image-to-Text (OCR) Module
+- 4️⃣ Audio Translation Module
+- 5️⃣ Grammar & Spelling Check Module
+- 6️⃣ Text File Translation Module
+- 7️⃣ Multi-language Batch Translation Module
+- 8️⃣ Translation History Module
 
 ## 📝 MODULE DESCRIPTIONS 📖✨
 
-1️⃣ Text Translation: Converts input text into selected target language.
-2️⃣ Speech-to-Text: Converts spoken words into text for translation.
-3️⃣ Image-to-Text (OCR): Extracts and translates text from uploaded images.
-4️⃣ Audio Translation: Extracts text from the audio file then translates it into another language.
-5️⃣ Grammar & Spelling Check: Corrects grammar, punctuation, and spelling.
-6️⃣ Text File Translation: Translates entire text files with corrections.
-7️⃣ Multi-language Batch Translation: Translates one input into several languages at the same time.
-8️⃣ Translation History: Logs all translations and corrections for tracking.
+- 1️⃣ Text Translation: Converts input text into selected target language.
+- 2️⃣ Speech-to-Text: Converts spoken words into text for translation.
+- 3️⃣ Image-to-Text (OCR): Extracts and translates text from uploaded images.
+- 4️⃣ Audio Translation: Extracts text from the audio file then translates it into another language.
+- 5️⃣ Grammar & Spelling Check: Corrects grammar, punctuation, and spelling.
+- 6️⃣ Text File Translation: Translates entire text files with corrections.
+- 7️⃣ Multi-language Batch Translation: Translates one input into several languages at the same time.
+- 8️⃣ Translation History: Logs all translations and corrections for tracking.
 
 ## 🖼️ Project Screenshots
 
@@ -145,7 +145,7 @@ The AI-Based Language Translator facilitates the translation of multilingual tex
 ![output](screenshots/output7.png)
 
 ### Language Detection
-![Output](screenshots/Language_detection.png)
+![Output](screenshots/language_detection.png)
 
 ### Translation History
 ![App Interface](screenshots/translation_history.png)
