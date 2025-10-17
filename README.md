@@ -64,7 +64,8 @@ The AI-Based Language Translator facilitates the translation of multilingual tex
 - Existing systems do not provide phonetic transcription or speech pronunciation guidance for learners.
 
 
-## 🛠️ Tools Used
+
+## 🚀 Proposed System
 
 💬 It uses Natural Language Processing (NLP) and deep learning libraries like googletrans, gTTS, SpeechRecognition, and Tesseract OCR to detect, translate, and pronounce content in multiple languages.
 
@@ -79,7 +80,7 @@ The AI-Based Language Translator facilitates the translation of multilingual tex
 🌈 Student-Friendly & Colorful UI.
 
 
-## 💻 TOOLS USED 
+## 🛠️ Tools Used
 
 - 🐍 Python 3.x
 - 🖥️ Flask (Web Framework)
