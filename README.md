@@ -8,21 +8,21 @@
 
 
 ## 📚 Table of Contents
-- [About the Project](#-about-the-project)
-- [Tech Stack](#-tech-stack)
+- [ABOUT THE PROJECT](#-about-the-project)
+- [TECH STACK](#-tech-stack)
 - [Objectives](#-objectives)
-- [Existing Systems](#-existing-systems)
-- [Proposed System](#-proposed-system)
-- [Tools Used](#-tools-used)
-- [Project Screenshots](#-project-screenshots)
-- [MOdules](#-modules)
-- [Modules Description](#-modules-description)
+- [EXISTING SYSTEM](#-existing-systems)
+- [PROPOSED SYSTEM](#-proposed-system)
+- [TOOLS USED](#-tools-used)
+- [MODULES](#-modules)
+- [MODULE DESCRIPTIONS](#-modules-description)
+- [PROJECT SCREENSHOTS](#-project-screenshots)
 - [Future Enhancements](#-future-enhancements)
 
-## 💡 About the Project
+## 💡 ABOUT THE PROJECT
 The AI-Based Language Translator facilitates the translation of multilingual text, speech, images (via OCR), audio, and files within a unified platform. It provides functionalities such as grammar correction, pronunciation assistance, speech input and output capabilities, as well as multi-language batch translation, thereby enhancing accessibility for a wider audience. Additionally, the system incorporates a translation history feature, which allows users to effectively monitor and reutilize previous translations.
 
-## 🛠️ Tech Stack
+## 🛠️ TECH STACK
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
@@ -39,7 +39,8 @@ The AI-Based Language Translator facilitates the translation of multilingual tex
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
-## ✨ Objectives
+## ✨ OBJECTIVES
+
 - The main objective of this project to develop an AI-powered language translation system that can translate text, speech, image (OCR), audio  and file translation in multiple languages.
  
  - To help users correct grammar and spelling mistakes in their input and enable multi-language batch for translating input text into several languages simultaneously.
@@ -111,7 +112,7 @@ The AI-Based Language Translator facilitates the translation of multilingual tex
 - 7️⃣ Multi-language Batch Translation: Translates one input into several languages at the same time.
 - 8️⃣ Translation History: Logs all translations and corrections for tracking.
 
-## 🖼️ Project Screenshots
+## 🖼️ PROJECT SCREENSHOTS
 
 ### Text Translation
 ![text](screenshots/text.png)
