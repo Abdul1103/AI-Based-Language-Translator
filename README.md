@@ -8,15 +8,16 @@
 
 
 ## 📚 Table of Contents
+
 - [About the project](#-about-the-project)
 - [Tech Stack](#-tech-stack)
 - [Objectives](#-objectives)
-- [Existing systems](#-existing-systems)
-- [Proposed system](#-proposed-system)
-- [Tools used](#-tools-used)
+- [Existing Systems](#-existing-systems)
+- [Proposed System](#-proposed-system)
+- [Tools Used](#-tools-used)
 - [Modules](#-modules)
-- [Module description](#-modules-description)
-- [Project screenshots](#-project-screenshots)
+- [Module Description](#-modules-description)
+- [Project Screenshots](#-project-screenshots)
 - [Future Enhancements](#-future-enhancements)
 
 ## 💡 ABOUT THE PROJECT
@@ -53,7 +54,7 @@ The AI-Based Language Translator facilitates the translation of multilingual tex
 - To provide speech to text and translated text to speech audio features.  
 
 
-## ⚙️🕰️ EXISTING SYSTEM 📝🔹
+## ⚙️🕰️ EXISTING SYSTEMS
 
 - Most platforms focus on single-functionality (e.g., only text translation or speech translation), without integrating multiple features into one unified system.
 
@@ -64,7 +65,7 @@ The AI-Based Language Translator facilitates the translation of multilingual tex
 - Existing systems do not provide phonetic transcription or speech pronunciation guidance for learners.
 
 
-## 🚀🤖 PROPOSED SYSTEM 🌟🗣️
+## 🚀🤖 PROPOSED SYSTEM 
 
 💬 It uses Natural Language Processing (NLP) and deep learning libraries like googletrans, gTTS, SpeechRecognition, and Tesseract OCR to detect, translate, and pronounce content in multiple languages.
 
@@ -79,7 +80,7 @@ The AI-Based Language Translator facilitates the translation of multilingual tex
 🌈 Student-Friendly & Colorful UI.
 
 
-## 🛠️ TOOLS USED 💻✨
+##  💻 TOOLS USED 
 
 - 🐍 Python 3.x
 - 🖥️ Flask (Web Framework)
@@ -95,7 +96,7 @@ The AI-Based Language Translator facilitates the translation of multilingual tex
 - 🔤 pyspellchecker (Spell Correction)
 - 🔡 eng_to_ipa (Pronunciation Guide)
 
-## 📦 MODULES 🧩🚀
+## 📦MODULES 
 
 - 1️⃣ Text Translation Module
 - 2️⃣ Speech-to-Text Module
@@ -106,7 +107,7 @@ The AI-Based Language Translator facilitates the translation of multilingual tex
 - 7️⃣ Multi-language Batch Translation Module
 - 8️⃣ Translation History Module
 
-## 📝 MODULE DESCRIPTIONS 📖✨
+## 📝 MODULE DESCRIPTIONS 
 
 - 1️⃣ Text Translation: Converts input text into selected target language.
 - 2️⃣ Speech-to-Text: Converts spoken words into text for translation.
