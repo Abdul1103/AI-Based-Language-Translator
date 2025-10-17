@@ -6,26 +6,36 @@
 💬 Text Translation | 📝 Grammar Check | 🔊 Speech Pronunciation
 📂 Multi-language Batch Translation | 📸 Image OCR Translation
 
+## 📑 Table of Contents
 
-## 📚 Table of Contents
+- [💡 About the Project](#-about-the-project)
+- [🧠 Objectives](#-objectives)
+- [⚙️ Tech Stack](#️-tech-stack)
+- [🧩 Existing System](#-existing-system)
+- [🚀 Proposed System](#-proposed-system)
+- [🛠️ Tools Used](#️-tools-used)
+- [📚 Modules](#-modules)
+- [📝 Module Description](#-module-description)
+- [🖼️ Project Screenshots](#️-project-screenshots)
+- [🔮 Future Enhancement](#-future-enhancement)
 
-- [About the project](#about-the-project)
-- [Tech Stack](#tech-stack)
-- [Objectives](#objectives)
-- [Existing Systems](#existing-systems)
-- [Proposed System](#proposed-system)
-- [Tools Used](#tools-used)
-- [Modules](#modules)
-- [Module Description](#modules-description)
-- [Project Screenshots](#project-screenshots)
-- [Future Enhancements](#future-enhancements)
-
-## 💡 ABOUT THE PROJECT
+## 💡 About the Project
 
 The AI-Based Language Translator facilitates the translation of multilingual text, speech, images (via OCR), audio, and files within a unified platform. It provides functionalities such as grammar correction, pronunciation assistance, speech input and output capabilities, as well as multi-language batch translation, thereby enhancing accessibility for a wider audience. Additionally, the system incorporates a translation history feature, which allows users to effectively monitor and reutilize previous translations.
 
 
-## 🛠️ TECH STACK
+## 🧠 Objectives
+
+- The main objective of this project to develop an AI-powered language translation system that can translate text, speech, image (OCR), audio  and file translation in multiple languages.
+ 
+ - To help users correct grammar and spelling mistakes in their input and enable multi-language batch for translating input text into several languages simultaneously.
+
+- To show pronunciation guides for better understanding of English words.
+ 
+- To provide speech to text and translated text to speech audio features.  
+
+
+## ⚙️ Tech Stack
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
@@ -43,18 +53,7 @@ The AI-Based Language Translator facilitates the translation of multilingual tex
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
 
-## ✨ OBJECTIVES
-
-- The main objective of this project to develop an AI-powered language translation system that can translate text, speech, image (OCR), audio  and file translation in multiple languages.
- 
- - To help users correct grammar and spelling mistakes in their input and enable multi-language batch for translating input text into several languages simultaneously.
-
-- To show pronunciation guides for better understanding of English words.
- 
-- To provide speech to text and translated text to speech audio features.  
-
-
-## ⚙️🕰️ EXISTING SYSTEMS
+## 🧩 Existing System
 
 - Most platforms focus on single-functionality (e.g., only text translation or speech translation), without integrating multiple features into one unified system.
 
@@ -65,7 +64,7 @@ The AI-Based Language Translator facilitates the translation of multilingual tex
 - Existing systems do not provide phonetic transcription or speech pronunciation guidance for learners.
 
 
-## 🚀🤖 PROPOSED SYSTEM 
+## 🛠️ Tools Used
 
 💬 It uses Natural Language Processing (NLP) and deep learning libraries like googletrans, gTTS, SpeechRecognition, and Tesseract OCR to detect, translate, and pronounce content in multiple languages.
 
@@ -80,7 +79,7 @@ The AI-Based Language Translator facilitates the translation of multilingual tex
 🌈 Student-Friendly & Colorful UI.
 
 
-##  💻 TOOLS USED 
+## 💻 TOOLS USED 
 
 - 🐍 Python 3.x
 - 🖥️ Flask (Web Framework)
@@ -96,7 +95,7 @@ The AI-Based Language Translator facilitates the translation of multilingual tex
 - 🔤 pyspellchecker (Spell Correction)
 - 🔡 eng_to_ipa (Pronunciation Guide)
 
-## 📦MODULES 
+## 📚 Modules
 
 - 1️⃣ Text Translation Module
 - 2️⃣ Speech-to-Text Module
@@ -107,7 +106,7 @@ The AI-Based Language Translator facilitates the translation of multilingual tex
 - 7️⃣ Multi-language Batch Translation Module
 - 8️⃣ Translation History Module
 
-## 📝 MODULE DESCRIPTIONS 
+## 📝 Module Description
 
 - 1️⃣ Text Translation: Converts input text into selected target language.
 - 2️⃣ Speech-to-Text: Converts spoken words into text for translation.
@@ -118,7 +117,7 @@ The AI-Based Language Translator facilitates the translation of multilingual tex
 - 7️⃣ Multi-language Batch Translation: Translates one input into several languages at the same time.
 - 8️⃣ Translation History: Logs all translations and corrections for tracking.
 
-## 🖼️ PROJECT SCREENSHOTS
+## 🖼️ Project Screenshots
 
 ### Text Translation
 ![text](screenshots/text.png)
@@ -158,7 +157,7 @@ The AI-Based Language Translator facilitates the translation of multilingual tex
 ![App Interface](screenshots/translation_history.png)
 
 
-## 🚀 FUTURE ENHANCEMENTS
+## 🔮 Future Enhancement
 
 -  Real-time voice translation for multilingual conversations.
 
