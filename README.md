@@ -8,19 +8,21 @@
 
 
 ## 📚 Table of Contents
-- [ABOUT THE PROJECT](#-about-the-project)
-- [TECH STACK](#-tech-stack)
+- [About the project](#-about-the-project)
+- [Tech Stack](#-tech-stack)
 - [Objectives](#-objectives)
-- [EXISTING SYSTEM](#-existing-systems)
-- [PROPOSED SYSTEM](#-proposed-system)
-- [TOOLS USED](#-tools-used)
-- [MODULES](#-modules)
-- [MODULE DESCRIPTIONS](#-modules-description)
-- [PROJECT SCREENSHOTS](#-project-screenshots)
+- [Existing systems](#-existing-systems)
+- [Proposed system](#-proposed-system)
+- [Tools used](#-tools-used)
+- [Modules](#-modules)
+- [Module description](#-modules-description)
+- [Project screenshots](#-project-screenshots)
 - [Future Enhancements](#-future-enhancements)
 
 ## 💡 ABOUT THE PROJECT
+
 The AI-Based Language Translator facilitates the translation of multilingual text, speech, images (via OCR), audio, and files within a unified platform. It provides functionalities such as grammar correction, pronunciation assistance, speech input and output capabilities, as well as multi-language batch translation, thereby enhancing accessibility for a wider audience. Additionally, the system incorporates a translation history feature, which allows users to effectively monitor and reutilize previous translations.
+
 
 ## 🛠️ TECH STACK
 
@@ -39,6 +41,7 @@ The AI-Based Language Translator facilitates the translation of multilingual tex
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
+
 ## ✨ OBJECTIVES
 
 - The main objective of this project to develop an AI-powered language translation system that can translate text, speech, image (OCR), audio  and file translation in multiple languages.
@@ -49,6 +52,7 @@ The AI-Based Language Translator facilitates the translation of multilingual tex
  
 - To provide speech to text and translated text to speech audio features.  
 
+
 ## ⚙️🕰️ EXISTING SYSTEM 📝🔹
 
 - Most platforms focus on single-functionality (e.g., only text translation or speech translation), without integrating multiple features into one unified system.
@@ -58,6 +62,7 @@ The AI-Based Language Translator facilitates the translation of multilingual tex
 - They do not support image translation with OCR, text file translation with correction, or multi-language batch translation from a single input.
 
 - Existing systems do not provide phonetic transcription or speech pronunciation guidance for learners.
+
 
 ## 🚀🤖 PROPOSED SYSTEM 🌟🗣️
 
@@ -152,7 +157,7 @@ The AI-Based Language Translator facilitates the translation of multilingual tex
 ![App Interface](screenshots/translation_history.png)
 
 
-## 🚀 Future Enhancements
+## 🚀 FUTURE ENHANCEMENTS
 
 -  Real-time voice translation for multilingual conversations.
 
