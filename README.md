@@ -9,16 +9,16 @@
 
 ## 📚 Table of Contents
 
-- [About the project](#-about-the-project)
-- [Tech Stack](#-tech-stack)
-- [Objectives](#-objectives)
-- [Existing Systems](#-existing-systems)
-- [Proposed System](#-proposed-system)
-- [Tools Used](#-tools-used)
-- [Modules](#-modules)
-- [Module Description](#-modules-description)
-- [Project Screenshots](#-project-screenshots)
-- [Future Enhancements](#-future-enhancements)
+- [About the project](#about-the-project)
+- [Tech Stack](#tech-stack)
+- [Objectives](#objectives)
+- [Existing Systems](#existing-systems)
+- [Proposed System](#proposed-system)
+- [Tools Used](#tools-used)
+- [Modules](#modules)
+- [Module Description](#modules-description)
+- [Project Screenshots](#project-screenshots)
+- [Future Enhancements](#future-enhancements)
 
 ## 💡 ABOUT THE PROJECT
 
