@@ -137,8 +137,8 @@ The AI-Based Language Translator facilitates the translation of multilingual tex
 ![output](screenshots/output4.png)
 
 ### Text file Translation
-![TextFile1](screenshots/text_file1.png)
-![TextFile2](screenshots/text_file2.png)
+![TextFile1](screenshots/Text_file1.png)
+![TextFile2](screenshots/Text_file2.png)
 ![output](screenshots/output5.png)
 
 ### Pronunciation Guide
